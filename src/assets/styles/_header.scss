@@ -2,7 +2,9 @@
     height: 471px;
     width: 1920px;
     overflow: hidden;
-    position: relative;
+    // position: relative;
+    position: absolute;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.42) 0%, rgba(0, 0, 0, 0.41) 56.69%, rgba(0, 0, 0, 0.79) 100%);
 }
 
 .menu {
@@ -87,5 +89,8 @@
     position: absolute;
     z-index: -1;
     margin: -260px 0px 0px;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.42) 0%, rgba(0, 0, 0, 0.41) 56.69%, rgba(0, 0, 0, 0.79) 100%);
+    // background: linear-gradient(180deg, rgba(0, 0, 0, 0.42) 0%, rgba(0, 0, 0, 0.41) 56.69%, rgba(0, 0, 0, 0.79) 100%);
+}
+.wrapper  {
+    position: relative;
 }
