@@ -1,0 +1,61 @@
+.main {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 148px 251px 0 251px;
+}
+
+.left-column {
+    &__bottle {
+        position: relative;
+    }
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+        margin-top: 52px;
+    }
+
+    &__flag {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.save {
+    position: absolute;
+    top: 255px;
+    left: 117px;
+}
+
+.img-description {
+    margin-right: 33px;
+}
+
+.items-description {
+    display: flex;
+    align-items: center;
+    margin-bottom: 36px;
+}
+
+.text-bold {
+    color: #000000;
+    font-family: "BrandonTextBold";
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.text-regular {
+    color: #000000;
+    font-family: "BrandonTextRegular";
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.img-description-cont {
+    width: 50px;
+    height: 50px;
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+}
