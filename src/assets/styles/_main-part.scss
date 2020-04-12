@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     position: relative;
-    padding: 148px 251px 0 251px;
+    padding: 148px 366px 0 366px;
 }
 
 .left-column {
@@ -14,11 +14,6 @@
         display: flex;
         flex-direction: column;
         margin-top: 52px;
-    }
-
-    &__flag {
-        display: flex;
-        align-items: center;
     }
 }
 
@@ -58,4 +53,61 @@
     margin-right: 50px;
     display: flex;
     align-items: center;
+}
+
+.right-column {
+    width: 706px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    padding-top: 65px;
+
+    &__logo-cont {
+        display: flex;
+    }
+
+    &__data-cont {
+        display: flex;
+        margin-top: 20px;
+        margin-bottom: 47px;
+    }
+}
+
+.logo-img {
+    height: 36px;
+    width: 36px;
+    margin-right: 16px;
+}
+
+.logo-text {
+    color: #FFFFFF;
+    font-family: "BrandonTextRegular";
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.wine-name-text {
+    color: #FFFFFF;
+    font-family: "BrandonTextRegular";
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 64px
+}
+
+.data {
+    font-weight: bold;
+    border-right: 1px solid;
+    padding-right: 10px;
+    margin-right: 10px;
+
+}
+
+.repetitive-styles {
+    color: #FFFFFF;
+    font-family: "BrandonTextRegular";
+    font-size: 19.5px;
+    line-height: 27px;
 }
