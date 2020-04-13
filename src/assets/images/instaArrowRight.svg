@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="53px" height="53px" viewBox="0 0 53 53" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 58 (101010) - https://sketch.com -->
+    <title>93E4EF41-3985-477B-AAA7-E36508B70A7C</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <path d="M1530.5,3208 C1538.50813,3208 1545,3214.49187 1545,3222.5 C1545,3230.50813 1538.50813,3237 1530.5,3237 C1522.49187,3237 1516,3230.50813 1516,3222.5 C1516,3214.49187 1522.49187,3208 1530.5,3208 Z M1525.70504,3216.01984 C1525.3413,3216.55937 1525.48401,3217.29149 1526.02379,3217.65507 L1533.21287,3222.49735 L1526.01981,3227.34511 C1525.48012,3227.70883 1525.33761,3228.44098 1525.70149,3228.98042 C1526.06538,3229.51987 1526.79786,3229.66232 1527.33755,3229.2986 L1535.98031,3223.47382 C1536.67334,3223.00675 1536.67321,3221.98703 1535.98005,3221.52015 L1527.34101,3215.70123 C1526.80123,3215.33765 1526.06878,3215.4803 1525.70504,3216.01984 Z" id="path-1"></path>
+        <filter x="-62.1%" y="-62.1%" width="224.1%" height="224.1%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="6" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Tests" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Motefili-final" transform="translate(-1504.000000, -3196.000000)">
+            <g id="Combined-Shape">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>
