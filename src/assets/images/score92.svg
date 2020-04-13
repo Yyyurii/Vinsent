@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 58 (101010) - https://sketch.com -->
+    <title>F47380C0-798F-4871-8F8C-1210BF03F5C6</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <linearGradient x1="61.7291306%" y1="25.7231672%" x2="0%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#E73448" offset="0%"></stop>
+            <stop stop-color="#E56F70" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Tests" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Motefili-final" transform="translate(-851.000000, -2375.000000)">
+            <g id="Group-8-Copy-3" transform="translate(853.000000, 2377.000000)">
+                <circle id="Oval-Copy-18" stroke="#A5A5A5" stroke-width="3" opacity="0.331775484" cx="23" cy="23" r="23"></circle>
+                <path d="M23,46 C35.7025492,46 46,35.7025492 46,23 C46,15.5605639 42.4679407,8.94608445 36.9892769,4.7420164 C34.9396259,3.16921094 32.6175239,1.93377179 30.1059886,1.11871646 C27.8681462,0.392481264 25.4799075,0 23,0 C10.2974508,0 0,10.2974508 0,23 C0.333732002,30.3177658 3.09030324,36.2936279 8.26971373,40.9275862" id="Oval-Copy-19" stroke="url(#linearGradient-1)" stroke-width="3" stroke-linecap="round" transform="translate(23.000000, 23.000000) rotate(-180.000000) translate(-23.000000, -23.000000) "></path>
+                <text id="92" font-family="BrandonText-Bold, Brandon Text" font-size="20.1599973" font-weight="bold" fill="#E73448">
+                    <tspan x="11" y="31">92</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

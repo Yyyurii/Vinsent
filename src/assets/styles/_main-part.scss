@@ -119,6 +119,18 @@
         display: flex;
         align-items: center;
     }
+
+    &__body-scale-cont {
+        margin-top: 26px;
+    }
+
+    &__critic-cont {
+        height: 280px;
+        width: 670px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
 }
 
 .logo-cont {
@@ -286,4 +298,81 @@
     font-weight: 900;
     letter-spacing: -0.44px;
     line-height: 34px;
+}
+
+.background-Rectangle-taste {
+    height: 17px;
+    width: 101px;
+    background-color: #FFE2E2;
+    position: absolute;
+    z-index: 0;
+}
+
+.body-progress-scale {
+    height: 5px;
+    width: 499px;
+    border-radius: 5px;
+    background: linear-gradient(225deg, #E73448 0%, #E56F70 100%);
+}
+
+.body-scale {
+    height: 5px;
+    width: 702px;
+    border-radius: 5px;
+    background-color: #D8D8D8;
+    margin-top: 7px;
+    margin-bottom: 34px;
+}
+
+.body-structure {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.body {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.body-evaluation {
+    font-size: 18px;
+    letter-spacing: -0.73px;
+    line-height: 11px;
+    text-align: right;
+}
+
+.background-Rectangle-critic {
+    height: 17px;
+    width: 259px;
+    background-color: #FFE2E2;
+    position: absolute;
+    z-index: 0;
+}
+
+.critic-description {
+    display: flex;
+    margin-top: 46px;
+    align-items: center;
+}
+
+.critic-img {
+    margin-right: 31px;
+}
+
+.vintage {
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 22px;
+}
+
+.wine-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.tasted {
+    font-size: 16px;
+    opacity: .5;
+    font-weight: normal;
 }
