@@ -125,11 +125,14 @@
     }
 
     &__critic-cont {
-        height: 280px;
+        height: 240px;
         width: 670px;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
+    }
+    &__location {
+        margin-top: 16px;
     }
 }
 
@@ -375,4 +378,12 @@
     font-size: 16px;
     opacity: .5;
     font-weight: normal;
+}
+
+.background-Rectangle-location {
+    height: 17px;
+    width: 179px;
+    background-color: #FFE2E2;
+    position: absolute;
+    z-index: 0;
 }
