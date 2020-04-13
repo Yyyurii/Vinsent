@@ -1,11 +1,13 @@
 .vinsent-cont {
     margin: 0px 90px;
-    padding: 1px 242px 0;
+    padding: 1px 240px 0;
     background-color: #FFF5F5;
     display: flex;
 }
 
 .vinsent-left-column {
+    margin-right: 170px;
+
     &__vinsent-title {
         margin-bottom: 15px;
     }
@@ -37,4 +39,20 @@
 
 .vinsent-reviewer-cont {
     display: flex;
+}
+
+.vinsent-right-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.journal-img-cont {
+    margin-bottom: 8px;
+}
+
+.journal-text {
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 25px;
 }
