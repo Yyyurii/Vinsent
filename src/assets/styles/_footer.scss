@@ -1,0 +1,52 @@
+.footer-cont {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 129px;
+    margin-top: 129px;
+    padding: 60px 123px 40px;
+    background: linear-gradient(225deg, #E73448 0%, #E56F70 100%);
+
+    &__vinsent-column {
+        // margin-right: 170px;
+    }
+
+    &__social-network {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        border-right: 1px solid white;
+    }
+
+    &__main-tabs {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+
+.vinsent-img-cont {
+    margin-bottom: 20px;
+}
+
+.network-img {
+    margin-right: 50px;
+}
+
+.tabs-text {
+    font-size: 14px;
+    line-height: 30.59px;
+}
+
+.tabs-text-bold {
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 0px;
+}
+
+.payment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #272727;
+    padding: 20px 125px;
+}
