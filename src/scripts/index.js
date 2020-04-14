@@ -9,7 +9,7 @@ $(document).ready(function onDocumentReady() {
 //       slidesToShow: 3,
 //       slidesToScroll: 3
 //     });
-
+console.log($('.vinsent-left-column__vinsent-review'))  
 
 
     // $(".left-column__bottle").sticky({topSpacing:0});
