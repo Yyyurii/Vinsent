@@ -1,14 +1,19 @@
 .header-cont {
     height: 471px;
-    width: 1920px;
+    max-width: 1920px;
+    width: 100%;
     overflow: hidden;
     position: absolute;
+    display: flex;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.42) 0%, rgba(0, 0, 0, 0.41) 56.69%, rgba(0, 0, 0, 0.79) 100%);
+    @media (max-width:1024px ){
+        width: 100%;
+    }
 }
 
 .menu {
     height: 120px;
-    width: 1920px;
+    width: 100%;
     position: absolute;
     z-index: 1;
     display: flex;
@@ -21,6 +26,12 @@
 
     &__vinsent-img {
         margin: 0 46px 0 88px;
+        @media (max-width:1200px) {
+            margin: 0 36px 0 68px;
+        }
+        @media (max-width:1024px) {
+            margin: 0 23px 0 24px;
+        }
     }
 
     &__right-menu {
@@ -39,13 +50,23 @@
 
     &__button-cont {
         margin-right: 88px;
+        @media (max-width:1200px) {
+            margin-right: 68px;
+        }
+        @media (max-width:1024px) {
+            margin-right: 24px;
+        }
+        @media (max-width:900px) {
+            display: none;
+        }
     }
 
 }
 
 .button {
     height: 39px;
-    width: 109px;
+    max-width: 109px;
+    width: 100%;
     border-radius: 7px;
     background: transparent;
     box-shadow: none;
@@ -53,7 +74,8 @@
     color: #FFFFFF;
     font-family: "BrandonTextBold";
     font-size: 16px;
-    cursor: pointer
+    cursor: pointer;
+
 }
 
 .vinsent {
@@ -69,12 +91,24 @@
     margin-right: 46px;
     font-family: "BrandonTextBold";
     cursor: pointer;
+    @media (max-width:1200px) {
+        margin-right: 36px;
+    }
+    @media (max-width:1024px) {
+        margin-right: 23px;
+    }
+    @media (max-width:900px) {
+        display: none;
+    }
 }
 
 .support {
     color: #FFFFFF;
     font-family: "BrandonTextRegular";
     font-size: 17px;
+    @media (max-width:900px) {
+        display: none;
+    }
 }
 
 .fonts-tab {
@@ -85,11 +119,22 @@
     text-align: center;
     margin-right: 46px;
     cursor: pointer;
+    @media (max-width:1200px) {
+        margin-right: 36px;
+    }
+    @media (max-width:1024px) {
+        margin-right: 23px;
+    }
+    @media (max-width:900px) {
+        display: none;
+    }
+
 }
 
 .header-img {
     position: absolute;
     z-index: -1;
     margin: -260px 0px 0px;
-    // background: linear-gradient(180deg, rgba(0, 0, 0, 0.42) 0%, rgba(0, 0, 0, 0.41) 56.69%, rgba(0, 0, 0, 0.79) 100%);
+    width: 100%;
+    min-height: 100%;
 }
