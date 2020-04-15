@@ -51,6 +51,11 @@
     position: absolute;
     top: 255px;
     left: 117px;
+
+    @media (max-width: 1200px) {
+        top: 179px;
+        left: 82px;
+    }
 }
 
 .save-percent {
@@ -67,6 +72,11 @@
     text-align: center;
     position: absolute;
     bottom: -112px;
+
+    @media (max-width: 1200px) {
+        bottom: -28px;
+        left: -12px;
+    }
 }
 
 .img-description-cont {
@@ -96,15 +106,19 @@
 
 .right-column {
     max-width: 706px;
+
     @media (max-width: 1200px) {
         max-width: 596px;
     }
+
     margin-left: 190px;
+
     @media (max-width:1650px) {
         margin-left: 90px;
     }
+
     @media (max-width:1200px) {
-        margin-left:60px;
+        margin-left: 60px;
     }
 
     &__basic {
@@ -161,7 +175,7 @@
         margin-top: 60px;
         max-width: 706px;
         width: 100%;
-        height: 357px;       
+        height: 357px;
     }
 
     &__user {
@@ -210,6 +224,7 @@ iframe {
         height: 302px;
     }
 }
+
 .logo-cont {
     display: flex;
 }
@@ -236,6 +251,7 @@ iframe {
     font-size: 50px;
     font-weight: bold;
     line-height: 64px;
+
     @media (max-width: 1200px) {
         font-size: 41px;
     }
@@ -336,6 +352,7 @@ iframe {
 
 .background-Rectangle {
     width: 306px;
+
     @media (max-width: 1200px) {
         width: 275px;
     }
@@ -349,6 +366,7 @@ iframe {
     line-height: 34px;
     position: absolute;
     z-index: 1;
+
     @media (max-width: 1200px) {
         font-size: 20px;
     }
@@ -368,6 +386,7 @@ iframe {
     border-radius: 13.8px;
     padding: 5px 15px;
     margin-right: 4px;
+
     @media (max-width: 1200px) {
         border-right: 0px;
         padding: 5px 10px;
@@ -376,6 +395,7 @@ iframe {
 
 .boxes-text {
     font-size: 16px;
+
     @media (max-width: 1200px) {
         font-size: 14px;
     }
@@ -415,6 +435,7 @@ iframe {
     background-color: #D8D8D8;
     margin-top: 7px;
     margin-bottom: 34px;
+
     @media (max-width: 1200px) {
         max-width: 596px;
     }
@@ -441,8 +462,9 @@ iframe {
 
 .background-Rectangle-critic {
     width: 293px;
+
     @media (max-width: 1200px) {
-    width: 265px;
+        width: 265px;
     }
 
 }
@@ -477,6 +499,7 @@ iframe {
 
 .background-Rectangle-location {
     width: 179px;
+
     @media (max-width: 1200px) {
         width: 160px;
     }
@@ -485,6 +508,7 @@ iframe {
 .background-Rectangle-instagram {
     width: 203px;
     bottom: -9px;
+
     @media (max-width: 1200px) {
         width: 184px;
     }
@@ -502,6 +526,7 @@ iframe {
     max-width: 227px;
     width: 100%;
     height: 228px;
+
     @media (max-width: 1200px) {
         max-width: 193px;
         height: 193px;
