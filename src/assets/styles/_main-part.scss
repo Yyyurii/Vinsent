@@ -22,9 +22,17 @@
     position: relative;
     padding-top: 148px;
     margin-bottom: 190px;
+
+    @media (max-width:1024px) {
+        padding-top: 140px;
+    }
 }
 
 .left-column {
+    @media (max-width:1023px  ) {
+        display: none;
+    }
+
     &__bottle {
         position: relative;
     }
@@ -34,6 +42,23 @@
         flex-direction: column;
         margin-top: 52px;
     }
+}
+
+.bottle-media {
+    display: none;
+
+    @media (max-width:1023px) {
+        display: block;
+        transform: rotate(90deg);
+        position: absolute;
+        top: 221px;
+        left: 80px;
+    }
+}
+
+.bottle-media-img {
+    height: 335px;
+    width: 84px;
 }
 
 .bottle {
@@ -106,11 +131,6 @@
 
 .right-column {
     max-width: 706px;
-
-    @media (max-width: 1200px) {
-        max-width: 596px;
-    }
-
     margin-left: 190px;
 
     @media (max-width:1650px) {
@@ -119,22 +139,43 @@
 
     @media (max-width:1200px) {
         margin-left: 60px;
+        max-width: 596px;
+    }
+
+    @media (max-width:1024px) {
+        margin-left: 0px;
+    }
+
+    @media (max-width: 768px) {
+        max-width: 414px;
     }
 
     &__basic {
         display: flex;
         flex-direction: column;
-        padding-top: 65px;
-    }
 
+
+        @media (max-width:1024px) {
+            align-items: center;
+            padding-top: 0px;
+        }
+    }
+    &__price {
+        @media (max-width:1024px) {
+            display: none;
+        }
+    }
     &__number-cont {
         display: flex;
         align-items: center;
+        @media (max-width:1024px) {
+            display: none;
+        }
     }
 
     &__order-cont {
         height: 54px;
-        width: 301px;
+        max-width: 301px;
         border-radius: 7px;
         background: linear-gradient(130.97deg, #00BE92 0%, #2FB4D8 100%);
         display: flex;
@@ -142,6 +183,9 @@
         justify-content: space-between;
         padding: 15px;
         margin-top: 36px;
+        @media (max-width:768px) {
+            max-width: 100%;
+        }
     }
 
     &__cases-cont {
@@ -150,10 +194,13 @@
 
     &__cases-scale-cont {
         height: 10px;
-        width: 300px;
+        max-width: 300px;
         border-radius: 10.5px;
         background-color: #D8D8D8;
         margin-top: 7px;
+        @media (max-width:768px) {
+            max-width: 100%;
+        }
     }
 
     &__about-wine-cont {
@@ -176,6 +223,12 @@
         max-width: 706px;
         width: 100%;
         height: 357px;
+
+        @media (max-width: 1200px) {
+            max-width: 596px;
+            width: 100%;
+            height: 302px;
+        }
     }
 
     &__user {
@@ -198,6 +251,15 @@
 
     &__location {
         margin-top: 16px;
+        max-width: 706px;
+        width: 100%;
+        height: 357px;
+
+        @media (max-width: 1200px) {
+            max-width: 596px;
+            width: 100%;
+            height: 365px;
+        }
     }
 
     &__instagram-cont {
@@ -217,28 +279,67 @@
     }
 }
 
-iframe {
-    @media (max-width: 1200px) {
-        max-width: 596px;
-        width: 100%;
-        height: 302px;
-    }
+.number-media {
+    align-items: center;
+    display: flex;
+}
+
+.one-case-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+}
+.one-media {
+    font-size: 41.6px;
+    font-weight: bold;
+    line-height: 57px;
+}
+
+.case-media {
+    font-family: 'BrandonTextBold';
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: -0.67px;
+    line-height: 20px;
 }
 
 .logo-cont {
     display: flex;
+
+    @media (max-width:1024px) {
+        flex-direction: column;
+    }
 }
 
 .data-cont {
     display: flex;
     margin-top: 20px;
     margin-bottom: 47px;
+
+    @media (max-width:1024px) {
+        margin-top: 0px;
+        margin-bottom: 80px;
+    }
 }
 
 .logo-img {
     height: 36px;
     width: 36px;
     margin-right: 16px;
+
+    @media (max-width:1024px) {
+        height: 62px;
+        width: 62px;
+        margin-right: 0px;
+    }
+}
+
+.logo-img-cont {
+    @media (max-width:1024px) {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .logo-text {
@@ -255,10 +356,21 @@ iframe {
     @media (max-width: 1200px) {
         font-size: 41px;
     }
+
+    @media (max-width: 1024px) {
+        font-size: 32px;
+        line-height: 46px;
+        text-align: center;
+    }
+
+    @media (max-width: 405px) {
+        font-size: 22px;
+        line-height: 26px;
+        text-align: center;
+    }
 }
 
 .data {
-    font-weight: bold;
     border-right: 1px solid;
     padding-right: 10px;
     margin-right: 10px;
@@ -268,7 +380,14 @@ iframe {
 .repetitive-styles {
     font-size: 19.5px;
     line-height: 27px;
+
+    @media (max-width:1024px) {
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+    }
 }
+
 
 .one {
     font-size: 41.6px;
@@ -303,6 +422,20 @@ iframe {
     font-size: 20px;
     letter-spacing: -0.46px;
     line-height: 27px;
+}
+
+.price-media-cont {
+    display: none;
+    @media (max-width:1024px) {
+        max-width: 301px;
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    @media (max-width:768px) {
+        max-width: 100%;
+    }
 }
 
 .save-price {
@@ -345,9 +478,12 @@ iframe {
 
 .progress-scale {
     height: 10px;
-    width: 247px;
+    max-width: 247px;
     border-radius: 10.5px;
     background: linear-gradient(225deg, #E73448 0%, #E56F70 100%);
+    @media (max-width:768px) {
+        max-width: 298px;
+    }
 }
 
 .background-Rectangle {

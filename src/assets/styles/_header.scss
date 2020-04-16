@@ -6,10 +6,12 @@
     position: absolute;
     display: flex;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.42) 0%, rgba(0, 0, 0, 0.41) 56.69%, rgba(0, 0, 0, 0.79) 100%);
+
     @media (max-width: 1200px) {
         height: 390px;
     }
-    @media (max-width:1024px ){
+
+    @media (max-width:1024px) {
         width: 100%;
     }
 }
@@ -29,9 +31,11 @@
 
     &__vinsent-img {
         margin: 0 46px 0 88px;
+
         @media (max-width:1200px) {
             margin: 0 36px 0 68px;
         }
+
         @media (max-width:1024px) {
             margin: 0 23px 0 24px;
         }
@@ -44,23 +48,46 @@
 
     &__support-numb {
         margin-right: 36px;
+        @media (max-width:1200px) {
+            margin-right: 18px;
+        }
+        @media (max-width:480px) {
+           display: none;
+        }
     }
 
     &__search-img {
         margin-right: 36px;
         cursor: pointer;
+
+        @media (max-width: 900px) {
+            margin-right: 13px;
+        }
     }
 
     &__button-cont {
         margin-right: 88px;
+
         @media (max-width:1200px) {
             margin-right: 68px;
         }
+
         @media (max-width:1024px) {
             margin-right: 24px;
         }
+
         @media (max-width:900px) {
             display: none;
+        }
+    }
+
+    &__burger {
+        display: none;
+        cursor: pointer;
+
+        @media (max-width: 900px) {
+            display: block;
+            margin-left: 13px;
         }
     }
 
@@ -83,6 +110,12 @@
 
 .vinsent {
     margin-bottom: 10px;
+
+    @media (max-width: 900px) {
+        width: 72px;
+        height: 27px;
+        margin-bottom: 0px;
+    }
 }
 
 .home {
@@ -94,12 +127,15 @@
     margin-right: 46px;
     font-family: "BrandonTextBold";
     cursor: pointer;
+
     @media (max-width:1200px) {
         margin-right: 36px;
     }
+
     @media (max-width:1024px) {
         margin-right: 23px;
     }
+
     @media (max-width:900px) {
         display: none;
     }
@@ -109,8 +145,8 @@
     color: #FFFFFF;
     font-family: "BrandonTextRegular";
     font-size: 17px;
-    @media (max-width:900px) {
-        display: none;
+    @media (max-width: 900px) {
+        font-size: 14px;
     }
 }
 
@@ -122,12 +158,15 @@
     text-align: center;
     margin-right: 46px;
     cursor: pointer;
+
     @media (max-width:1200px) {
         margin-right: 36px;
     }
+
     @media (max-width:1024px) {
         margin-right: 23px;
     }
+
     @media (max-width:900px) {
         display: none;
     }
@@ -137,7 +176,7 @@
 .header-img {
     position: absolute;
     z-index: -1;
-    margin: -260px 0px 0px;
+    // margin: -260px 0px 0px;
     width: 100%;
     min-height: 100%;
 }
