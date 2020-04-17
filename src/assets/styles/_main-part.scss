@@ -24,12 +24,12 @@
     margin-bottom: 190px;
 
     @media (max-width:1024px) {
-        padding-top: 140px;
+        padding-top: 100px;
     }
 }
 
 .left-column {
-    @media (max-width:1023px  ) {
+    @media (max-width:1023px) {
         display: none;
     }
 
@@ -112,10 +112,31 @@
     align-items: center;
 }
 
+.img-description-media {
+    @media (max-width:480px) {
+        width: 32px;
+        height: 32px;
+    }
+}
+
 .items-description {
     display: flex;
     align-items: center;
     margin-bottom: 36px;
+}
+
+.items-description-media {
+    display: none;
+
+    @media (max-width:1024px) {
+        display: block;
+        margin-top: 30px;
+    }
+}
+
+.description-media {
+    display: flex;
+    justify-content: space-between;
 }
 
 .text-bold {
@@ -150,24 +171,34 @@
         max-width: 414px;
     }
 
+    @media (max-width: 479px) {
+        max-width: 280px;
+    }
+
     &__basic {
         display: flex;
         flex-direction: column;
+        padding-top: 65px;
 
+        @media (max-width:1200px) {
+            padding-top: 0px;
+        }
 
         @media (max-width:1024px) {
             align-items: center;
-            padding-top: 0px;
         }
     }
+
     &__price {
         @media (max-width:1024px) {
             display: none;
         }
     }
+
     &__number-cont {
         display: flex;
         align-items: center;
+
         @media (max-width:1024px) {
             display: none;
         }
@@ -183,6 +214,7 @@
         justify-content: space-between;
         padding: 15px;
         margin-top: 36px;
+
         @media (max-width:768px) {
             max-width: 100%;
         }
@@ -198,6 +230,7 @@
         border-radius: 10.5px;
         background-color: #D8D8D8;
         margin-top: 7px;
+
         @media (max-width:768px) {
             max-width: 100%;
         }
@@ -208,6 +241,10 @@
         display: flex;
         align-items: flex-end;
         margin-top: 94px;
+
+        @media (max-width:480px) {
+            margin-top: 70px;
+        }
     }
 
     &__about-wine-text-cont {
@@ -216,6 +253,12 @@
 
     &__boxes {
         margin-top: 27px;
+
+        @media (max-width:768px) {
+            display: flex;
+            flex-wrap: wrap;
+            flex-grow: 1;
+        }
     }
 
     &__video {
@@ -228,6 +271,13 @@
             max-width: 596px;
             width: 100%;
             height: 302px;
+        }
+
+        @media (max-width:480px) {
+            max-width: 290px;
+            width: 100%;
+            height: 212px;
+            margin-top: 30px;
         }
     }
 
@@ -243,10 +293,15 @@
 
     &__critic-cont {
         height: 240px;
-        width: 670px;
+        max-width: 100%;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
+
+        @media (max-width:768px) {
+            display: block;
+            margin-bottom: 130px;
+        }
     }
 
     &__location {
@@ -259,6 +314,11 @@
             max-width: 596px;
             width: 100%;
             height: 365px;
+        }
+
+        @media (max-width:480px) {
+            width: 100%;
+            height: 190px;
         }
     }
 
@@ -276,6 +336,13 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @media (max-width:768px) {
+            margin-top: 60px;
+        }
+        // @media (max-width:768px) {
+        //     margin-top: 120px;
+        // }
     }
 }
 
@@ -290,6 +357,7 @@
     align-items: center;
     margin: 0 20px;
 }
+
 .one-media {
     font-size: 41.6px;
     font-weight: bold;
@@ -363,11 +431,15 @@
         text-align: center;
     }
 
-    @media (max-width: 405px) {
-        font-size: 22px;
-        line-height: 26px;
-        text-align: center;
+    @media (max-width:480px) {
+        font-size: 27px;
     }
+
+    // @media (max-width: 405px) {
+    //     font-size: 22px;
+    //     line-height: 26px;
+    //     text-align: center;
+    // }
 }
 
 .data {
@@ -426,13 +498,16 @@
 
 .price-media-cont {
     display: none;
+
     @media (max-width:1024px) {
         max-width: 301px;
         display: block;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        padding-top: 40px;
     }
+
     @media (max-width:768px) {
         max-width: 100%;
     }
@@ -446,6 +521,10 @@
     letter-spacing: 0;
     line-height: 36px;
     margin-right: 15px;
+
+    @media (max-width:480px) {
+        font-size: 22px;
+    }
 }
 
 .release-price {
@@ -453,6 +532,10 @@
     letter-spacing: -0.67px;
     line-height: 27px;
     margin-right: 4px;
+
+    @media (max-width:480px) {
+        font-size: 18px;
+    }
 }
 
 .text-line-through {
@@ -481,8 +564,13 @@
     max-width: 247px;
     border-radius: 10.5px;
     background: linear-gradient(225deg, #E73448 0%, #E56F70 100%);
+
     @media (max-width:768px) {
         max-width: 298px;
+    }
+
+    @media (max-width:480px) {
+        max-width: 225px;
     }
 }
 
@@ -491,6 +579,10 @@
 
     @media (max-width: 1200px) {
         width: 275px;
+    }
+
+    @media (max-width:480px) {
+        width: 241px;
     }
 }
 
@@ -506,12 +598,20 @@
     @media (max-width: 1200px) {
         font-size: 20px;
     }
+
+    @media (max-width:480px) {
+        font-size: 16px;
+    }
 }
 
 .about-wine-text {
     font-size: 18px;
     letter-spacing: 0;
     line-height: 25px;
+
+    @media (max-width:480px) {
+        font-size: 14px;
+    }
 }
 
 .boxes {
@@ -527,6 +627,11 @@
         border-right: 0px;
         padding: 5px 10px;
     }
+
+    @media (max-width:768px) {
+        text-align: center;
+        padding: 5px 0px;
+    }
 }
 
 .boxes-text {
@@ -537,8 +642,22 @@
     }
 }
 
+.boxes-text-long {
+    @media (max-width:768px) {
+        flex-grow: 1;
+    }
+}
+
 .background-Rectangle-winemaker {
     width: 344px;
+
+    @media (max-width:1200px) {
+        width: 308px;
+    }
+
+    @media (max-width:480px) {
+        width: 270px;
+    }
 }
 
 .user-img {
@@ -550,10 +669,22 @@
     font-weight: 900;
     letter-spacing: -0.44px;
     line-height: 34px;
+
+    @media (max-width:480px) {
+        font-size: 20px;
+    }
 }
 
 .background-Rectangle-taste {
     width: 101px;
+
+    @media (max-width:1200px) {
+        width: 91px;
+    }
+
+    @media (max-width:480px) {
+        width: 80px;
+    }
 }
 
 .body-progress-scale {
@@ -587,6 +718,10 @@
     font-family: 'BrandonTextBold';
     font-size: 18px;
     font-weight: bold;
+
+    @media (max-width:480px) {
+        font-size: 14px;
+    }
 }
 
 .body-evaluation {
@@ -594,13 +729,21 @@
     letter-spacing: -0.73px;
     line-height: 11px;
     text-align: right;
+
+    @media (max-width:480px) {
+        font-size: 14px;
+    }
 }
 
 .background-Rectangle-critic {
     width: 293px;
 
-    @media (max-width: 1200px) {
+    @media (max-width:1200px) {
         width: 265px;
+    }
+
+    @media (max-width:480px) {
+        width: 234px;
     }
 
 }
@@ -617,27 +760,36 @@
 
 .vintage {
     font-size: 16px;
-    letter-spacing: 0;
     line-height: 22px;
 }
 
 .wine-name {
     font-family: 'BrandonTextBold';
     font-size: 18px;
+    line-height: 22px;
     font-weight: bold;
+
+    @media (max-width:480px) {
+        font-size: 16px;
+    }
 }
 
 .tasted {
     font-size: 16px;
     opacity: .5;
+    line-height: 22px;
     font-weight: normal;
 }
 
 .background-Rectangle-location {
     width: 179px;
 
-    @media (max-width: 1200px) {
+    @media (max-width:1200px) {
         width: 160px;
+    }
+
+    @media (max-width:480px) {
+        width: 140px;
     }
 }
 
@@ -645,8 +797,11 @@
     width: 203px;
     bottom: -9px;
 
-    @media (max-width: 1200px) {
+    @media (max-width:1200px) {
         width: 184px;
+    }
+    @media (max-width:480px) {
+        width: 160px;
     }
 }
 
@@ -656,6 +811,9 @@
     letter-spacing: 0;
     line-height: 25px;
     text-align: right;
+    @media (max-width:480px) {
+        font-size: 16px;
+    }
 }
 
 .insta-images {
@@ -667,7 +825,17 @@
         max-width: 193px;
         height: 193px;
     }
+
+    @media (max-width: 768px) {
+        max-width: 130px;
+        height: 117px;
+    }
+    @media (max-width:480px) {
+        max-width: 90px;
+        height: 90px;
+    }
 }
+
 
 .insta-photos {
     position: absolute;
