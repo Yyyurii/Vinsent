@@ -25,6 +25,10 @@
 
     @media (max-width:1024px) {
         padding-top: 100px;
+        margin-bottom: 140px;
+    }
+    @media (max-width:780px) {
+        margin-bottom: 100px;
     }
 }
 
@@ -606,7 +610,6 @@
 
 .about-wine-text {
     font-size: 18px;
-    letter-spacing: 0;
     line-height: 25px;
 
     @media (max-width:480px) {

@@ -5,13 +5,29 @@
     max-width: 1743px;
     width: 100%;
     margin: 0 auto;
+
+    @media (max-width:1200px) {
+        flex-direction: column;
+    }
+    @media (max-width:1023px) {
+        max-width: 100%;
+    }
 }
 
 .vinsent-left-column {
     max-width: 706px;
     width: 100%;
+
     @media (max-width: 1650px) {
         max-width: 596px;
+    }
+
+    @media (max-width:1200px) {
+        margin: 0 auto;
+        max-width: 67%;
+    }
+    @media (max-width:1023px) {
+        max-width: 90%;
     }
 
     &__vinsent-title {
@@ -30,10 +46,23 @@
         max-width: 706px;
         width: 100%;
         height: 357px;
+
         @media (max-width: 1650px) {
             max-width: 596px;
             width: 100%;
             height: 302px;
+        }
+
+        @media (max-width: 1200px) {
+            max-width: 820px;
+            width: 100%;
+            height: 464px;
+        }
+        @media (max-width:900px) {
+            height: 336px;
+        }
+        @media (max-width:780px) {
+            height: 236px;
         }
     }
 }
@@ -48,8 +77,20 @@
 
 .background-Rectangle-VINSENT {
     width: 315px;
+    @media (max-width:1200px) {
+        width: 285px;
+    }
+    @media (max-width:480px) {
+        width: 253px;
+    }
 }
 
+// .about-wine-vinsent {
+//     display: none;
+//     @media (max-width:480px) {
+//         font-size: 14px;
+//     }
+// }
 .vinsent-arrow {
     box-sizing: border-box;
     height: 26px;
@@ -60,14 +101,46 @@
 
 .vinsent-reviewer-cont {
     display: flex;
+    @media (max-width:900px) {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+}
+.vinsent-reviewer-img {
+    @media (max-width:900px) {
+        margin: 0 auto;
+    }
 }
 
+.revier-text {
+    font-size: 18px;
+    line-height: 25px;
+    @media (max-width:900px) {
+        text-align: center;
+        font-size: 17px;
+    }
+    @media (max-width:780px) {
+        font-size: 15px;
+    }
+}
 .vinsent-right-column {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     max-width: 372px;
     width: 100%;
+
+    @media (max-width:1200px) {
+        flex-direction: row;
+        max-width: 67%;
+        width: 100%;
+        margin: 0 auto;
+    }
+    @media (max-width:780px) {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 .journal-img-cont {
@@ -76,6 +149,18 @@
 
 .journal-text {
     font-size: 18px;
-    letter-spacing: 0;
     line-height: 25px;
+    @media (max-width:1200px) {
+        font-size: 14px;
+    }
+}
+
+.vinsent-right-column__journal {
+    @media (max-width:1200px) {
+        margin-right: 51px;
+    }
+    @media (max-width:780px) {
+        margin-right: 0px;
+        margin-bottom: 60px;
+    }
 }

@@ -6,8 +6,20 @@
     padding: 60px 123px 40px;
     background: linear-gradient(225deg, #E73448 0%, #E56F70 100%);
 
+    @media (max-width:1023px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-top: 90px;
+        padding: 60px 0 0;
+    }
+
     &__vinsent-column {
-        // margin-right: 170px;
+        @media (max-width:1023px) {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
     }
 
     &__social-network {
@@ -15,11 +27,33 @@
         flex-direction: column;
         justify-content: space-around;
         border-right: 1px solid white;
+
+        @media (max-width:1023px) {
+            display: flex;
+            flex-direction: row;
+            border-right: 0;
+            justify-content: start;
+            justify-content: space-around;
+            margin: 32px 0;
+        }
     }
 
     &__main-tabs {
         display: flex;
         flex-direction: column;
+        justify-content: space-around;
+
+        @media (max-width:1023px) {
+            display: none;
+        }
+    }
+}
+
+.main-tabs-media {
+    display: none;
+
+    @media (max-width:1023px) {
+        display: flex;
         justify-content: space-around;
     }
 }
@@ -41,7 +75,17 @@
     font-family: 'BrandonTextBold';
     font-weight: bold;
     font-size: 17px;
-    line-height: 0px;
+}
+
+.tabs-text-media {
+    font-size: 14px;
+    line-height: 30.59px;
+}
+
+.tabs-text-bold-media {
+    font-family: 'BrandonTextBold';
+    font-weight: bold;
+    font-size: 17px;
 }
 
 .payment {
@@ -50,4 +94,11 @@
     align-items: center;
     background-color: #272727;
     padding: 20px 125px;
+
+    @media (max-width:1023px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 0px;
+    }
 }
