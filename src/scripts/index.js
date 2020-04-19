@@ -46,7 +46,16 @@ $(document).ready(function onDocumentReady() {
         }
     });
 
+    // $('.insta-photos').slick();
+    $('.insta-photos').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        dots: true,
+        // prevArrow: '<button type="button"><img src="images/instaArrowLeft.svg"></button>',
+        // nextArrow: '<button type="button"><img src="images/instaArrowRight.svg"></button>'
 
+    });
 
 
 });
