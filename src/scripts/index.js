@@ -7,13 +7,13 @@ $(document).ready(function onDocumentReady() {
     var priceVal = $('.price-val').html();
     var $realPrice = $('.real-price');
     var realPriceVal = $('.real-price').html;
+
     $('.plus').on('click', function () {
         oneVal++;
         $one.empty();
-        $one.prepend(oneVal); 
+        $one.prepend(oneVal);
 
-        actualPrice();   
-        // priceWithoutDiscount();
+        actualPrice();
     });
 
     $('.minus').on('click', function () {
@@ -21,26 +21,36 @@ $(document).ready(function onDocumentReady() {
             oneVal--;
             $one.empty();
             $one.prepend(oneVal);
-        }     
-        
+        }
+
         actualPrice();
-        // priceWithoutDiscount();
     });
-    
+
     function actualPrice() {
         var newPrice = oneVal * priceVal;
         console.log('newPrice', newPrice);
         $price.empty();
-        $price.prepend(newPrice); 
+        $price.prepend(newPrice);
 
-        var realesePrice = Math.floor((newPrice*100)/73);
+        var realesePrice = Math.floor((newPrice * 100) / 73);
         $realPrice.empty();
         $realPrice.prepend(realesePrice);
     }
 
-    // function priceWithoutDiscount() {
-    //     var realesePrice = (newPrice*100)/73;
-    //     $realPrice.empty();
-    //     $realPrice.prepend(realesePrice);
-    // }
+    var $questionImg = $('.question-img ');
+    var $questionCont = $('.question-cont');
+ 
+        $questionImg.on('click', function () {
+            if ($questionCont.css('display', 'none')) {
+                $questionCont.css('display', 'block');
+            } else {
+                $questionCont.css('display', 'none');
+            }
+        });
+
+  
+
+
 });
+
+
