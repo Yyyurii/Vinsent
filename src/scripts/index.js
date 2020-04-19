@@ -1,20 +1,46 @@
 import $ from 'jquery';
 
 $(document).ready(function onDocumentReady() {
-    var $one = $('.one')
-    var val = $('.one').html();
+    var $one = $('.one');
+    var oneVal = $('.one').html();
+    var $price = $('.price-val');
+    var priceVal = $('.price-val').html();
+    var $realPrice = $('.real-price');
+    var realPriceVal = $('.real-price').html;
     $('.plus').on('click', function () {
-        val++;
+        oneVal++;
         $one.empty();
-        $one.prepend(val);
+        $one.prepend(oneVal); 
+
+        actualPrice();   
+        // priceWithoutDiscount();
     });
 
     $('.minus').on('click', function () {
-        if (val > 1) {
-            val--;
+        if (oneVal > 1) {
+            oneVal--;
             $one.empty();
-            $one.prepend(val);
-        }      
+            $one.prepend(oneVal);
+        }     
+        
+        actualPrice();
+        // priceWithoutDiscount();
     });
     
+    function actualPrice() {
+        var newPrice = oneVal * priceVal;
+        console.log('newPrice', newPrice);
+        $price.empty();
+        $price.prepend(newPrice); 
+
+        var realesePrice = Math.floor((newPrice*100)/73);
+        $realPrice.empty();
+        $realPrice.prepend(realesePrice);
+    }
+
+    // function priceWithoutDiscount() {
+    //     var realesePrice = (newPrice*100)/73;
+    //     $realPrice.empty();
+    //     $realPrice.prepend(realesePrice);
+    // }
 });
