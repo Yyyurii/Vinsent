@@ -1,4 +1,5 @@
 import $ from 'jquery';
+import slick from 'slick-carousel';
 
 $(document).ready(function onDocumentReady() {
     var $one = $('.one');
@@ -28,7 +29,6 @@ $(document).ready(function onDocumentReady() {
 
     function actualPrice() {
         var newPrice = oneVal * priceVal;
-        console.log('newPrice', newPrice);
         $price.text(newPrice);
 
         var realesePrice = Math.floor((newPrice * 100) / (100 - savePersent));
@@ -37,16 +37,16 @@ $(document).ready(function onDocumentReady() {
 
     var $questionImg = $('.question-img ');
     var $questionCont = $('.question-cont');
- 
-        $questionImg.on('click', function () {
-            if ($questionCont.css('display') === 'none') {
-                $questionCont.css('display', 'block');
-            } else {
-                $questionCont.css('display', 'none');
-            }
-        });
 
-  
+    $questionImg.on('click', function () {
+        if ($questionCont.css('display') === 'none') {
+            $questionCont.css('display', 'block');
+        } else {
+            $questionCont.css('display', 'none');
+        }
+    });
+
+
 
 
 });
