@@ -2,16 +2,17 @@ import $ from 'jquery';
 
 $(document).ready(function onDocumentReady() {
     var $one = $('.one');
-    var oneVal = $('.one').html();
+    var oneVal = $one.html();
     var $price = $('.price-val');
-    var priceVal = $('.price-val').html();
+    var priceVal = $price.html();
     var $realPrice = $('.real-price');
-    var realPriceVal = $('.real-price').html;
+    var realPriceVal = $realPrice.html;
+    var $savePersent = $('.save-persent');
+    var savePersent = $savePersent.html();
 
     $('.plus').on('click', function () {
         oneVal++;
-        $one.empty();
-        $one.prepend(oneVal);
+        $one.text(oneVal);
 
         actualPrice();
     });
@@ -19,8 +20,7 @@ $(document).ready(function onDocumentReady() {
     $('.minus').on('click', function () {
         if (oneVal > 1) {
             oneVal--;
-            $one.empty();
-            $one.prepend(oneVal);
+            $one.text(oneVal);
         }
 
         actualPrice();
@@ -29,19 +29,17 @@ $(document).ready(function onDocumentReady() {
     function actualPrice() {
         var newPrice = oneVal * priceVal;
         console.log('newPrice', newPrice);
-        $price.empty();
-        $price.prepend(newPrice);
+        $price.text(newPrice);
 
-        var realesePrice = Math.floor((newPrice * 100) / 73);
-        $realPrice.empty();
-        $realPrice.prepend(realesePrice);
+        var realesePrice = Math.floor((newPrice * 100) / (100 - savePersent));
+        $realPrice.text(realesePrice);
     }
 
     var $questionImg = $('.question-img ');
     var $questionCont = $('.question-cont');
  
         $questionImg.on('click', function () {
-            if ($questionCont.css('display', 'none')) {
+            if ($questionCont.css('display') === 'none') {
                 $questionCont.css('display', 'block');
             } else {
                 $questionCont.css('display', 'none');
