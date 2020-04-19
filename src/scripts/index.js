@@ -46,7 +46,8 @@ $(document).ready(function onDocumentReady() {
         }
     });
 
-    // $('.insta-photos').slick();
+    $('.vinsent-left-column__vinsent-review').slick();
+    
     $('.insta-photos').slick({
         infinite: true,
         slidesToShow: 3,
