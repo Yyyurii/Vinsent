@@ -867,10 +867,39 @@
     position: absolute;
 }
 
-// .insta-arrow-cont {
-//     z-index: 1;
-// }
+.insta-arrow-cont {
+    z-index: 1;
+}
 
 // .insta-arrows {
 //     padding-right: 15px;
 // }
+.insta-photos .slick-next, .insta-photos .slick-prev {
+    width: 29px;
+    height: 29px;
+    background: url(../images/instaArrowLeft.svg) no-repeat 50%;
+    opacity: .5;
+    transition: opacity .2s linear;
+}
+
+.insta-photos button {
+    border-width: 0px;
+    padding: 0px;
+    background-color: transparent;
+    border-image: none;
+    border-style: none;
+    border-color: transparent;
+}
+
+.insta-arrows-left {
+    position: absolute;
+    z-index: 1;
+    top: 40%;
+}
+
+.insta-arrows-right {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 40%;
+}

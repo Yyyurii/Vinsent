@@ -46,15 +46,18 @@ $(document).ready(function onDocumentReady() {
         }
     });
 
-    $('.vinsent-left-column__vinsent-review').slick();
+    $('.vinsent-left-column__vinsent-review').slick({
+        prevArrow: '<button type="button" class="vinsent-arrows-left"><img src="images/vinsentArrowLeft.svg"></button>',
+        nextArrow: '<button type="button" class="vinsent-arrows-right"><img src="images/vinsentArrowRight.svg"></button>'
+    });
     
     $('.insta-photos').slick({
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 3,
         dots: true,
-        // prevArrow: '<button type="button"><img src="images/instaArrowLeft.svg"></button>',
-        // nextArrow: '<button type="button"><img src="images/instaArrowRight.svg"></button>'
+        prevArrow: '<button type="button" class="insta-arrows-left"><img src="images/instaArrowLeft.svg"></button>',
+        nextArrow: '<button type="button" class="insta-arrows-right"><img src="images/instaArrowRight.svg"></button>'
 
     });
 

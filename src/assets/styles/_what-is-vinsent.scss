@@ -42,6 +42,7 @@
         margin-bottom: 50px;
         text-align: center;
         max-width: 100%;
+        padding: 0 50px;
     }
 
     &__vinsent-video {
@@ -170,4 +171,28 @@
 .slick-slide img {
     margin-left: auto;
     margin-right: auto
+}
+
+.vinsent-left-column__vinsent-review button {
+    border-width: 0px;
+    padding: 0px;
+    background-color: transparent;
+    border-image: none;
+    border-style: none;
+    border-color: transparent;
+    color: transparent;
+}
+
+.vinsent-arrows-left {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 50%;
+}
+
+.vinsent-arrows-right {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 50%;
 }
